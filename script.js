@@ -7,7 +7,7 @@ function getLocation() {
 
 function showPosition(position) {
   var url =
-    "http://api.weatherapi.com/v1/current.json?key=f56fe9717704493eb46140919231206&q=" +
+    "https://api.weatherapi.com/v1/current.json?key=f56fe9717704493eb46140919231206&q=" +
     position.coords.latitude +
     "," +
     position.coords.longitude +
