@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Local weather</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="img/favicon" href="img/favicon.svg" />
+    <meta
+      name="description"
+      content="Weather forecoast app showing current location"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <img
+            src="img/icon-place.svg"
+            width="16px"
+            height="auto"
+            alt="icon current position"
+          />
+          <h1 data-position>Choose your position</h1>
+        </div>
+        <h2 data-date>Current date</h2>
+      </header>
+
+      <section>
+        <div>
+          <h3 data-current-temp>-°</h3>
+          <h2 data-current-condition>Condition</h2>
+          <p>Feels like <span data-current-feelslike></span></p>
+        </div>
+        <div>
+          <img src="img/carbon_sun.svg" alt="icon sun" data-current-icon />
+        </div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

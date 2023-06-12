@@ -1,0 +1,131 @@
+/* Margin Reset */
+html,
+body,
+main,
+section,
+img,
+figure,
+span,
+header,
+footer,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* fonts */
+  --font-heading: "Sora";
+  --font-body: "Inter";
+
+  /* Colors */
+  --dark: #1f1f81;
+  --light: #e0e1fc;
+}
+
+/* Selection */
+::selection {
+  background: var(--dark);
+  color: var(--light);
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font-body), serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--dark);
+}
+
+//////////////////////////////////
+////////* Core Typgraphy *////////
+//////////////////////////////////
+
+h1 {
+  font-family: var(--font-heading), serif;
+  font-size: 24px;
+  font-size: clamp(24px, 1.6vw, 48px);
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--font-body), serif;
+  font-size: 18px;
+  font-size: clamp(18px, 1.25vw, 24px);
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-heading), serif;
+  font-size: 64px;
+  font-size: clamp(64px, 4.4vw, 88px);
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-body), serif;
+  font-size: 16px;
+  font-size: clamp(16px, 1.1vw, 18px);
+  font-weight: 400;
+}
+
+main {
+  margin: 3rem 1.5rem 3rem 1.5rem;
+  max-width: 1920px;
+  padding: 2em 0 2em 1em;
+  border-radius: 15px;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5em;
+    div {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 1em;
+      h1 {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    h2 {
+      padding-bottom: 0.5em;
+    }
+    img {
+      position: absolute;
+      bottom: 1.5em;
+      right: 1em;
+      width: clamp(120px, 15%, 300px);
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    header {
+      div {
+        img {
+          width: 26px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
